@@ -1,4 +1,15 @@
 #!/bin/bash
+cat > ~/.terraformrc << EOF
+provider_installation {
+  network_mirror {
+    url = "https://terraform-mirror.yandexcloud.net/"
+    include = ["registry.terraform.io/*/*"]
+  }
+  direct {
+    exclude = ["registry.terraform.io/*/*"]
+  }
+}
+EOF
 if [ ! -f "./authorized_key.json" ]; then
 	echo "Положите рядом с install.sh файл authorized_key.json от сервисного аккаунта"
 	exit 1
