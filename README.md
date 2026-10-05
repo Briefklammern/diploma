@@ -29,8 +29,8 @@
   ![action1](./img/1.PNG)
 - Вписать [код](https://github.com/Briefklammern/test-app-diploma/blob/main/.github/workflows/docker-image.yml), закоммитить изменения.
 - В разделе ```Settings/Secrets and variables/Actions``` репозитория риложения необходимо создать креды:
-  - DOCKERHUB_TOKEN - ранее созданный ключ от PAT Docker Hub аккаунта
-  - DOCKER_USERNAME - имя Docker Hub аккаунта
-  - SERVER_HOST - внешний IP адрес созданной терраформом ВМ
-  - SERVER_USER - пользователь, под которым разрешено подключаться по SSH на ВМ
-  - SSH_PRIVATE_KEY - содержимое приватного ключа SSH
+  - ```DOCKERHUB_TOKEN``` - ранее созданный ключ от PAT Docker Hub аккаунта
+  - ```DOCKER_USERNAME``` - имя Docker Hub аккаунта
+  - ```SERVER_HOST``` - внешний IP адрес созданной терраформом ВМ
+  - ```SERVER_USER``` - пользователь, под которым разрешено подключаться по SSH на ВМ
+  - ```SSH_PRIVATE_KEY``` - содержимое приватного ключа SSH
