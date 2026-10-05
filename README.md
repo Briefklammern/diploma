@@ -19,7 +19,7 @@
 - Скачивание и запуск [тестового приложения](https://github.com/Briefklammern/test-app-diploma)
 - Сборка образа Docker и отправка его в [Docker Hub](https://hub.docker.com/repository/docker/devillis/test-app-diploma)
 
-> {!NOTE}
+> [!NOTE]
 > Для отправки контейнера в Docker Hub необходимы креды PAT вашего аккаунта. Создать PAT необходимо в разделе 
 > https://app.docker.com/accounts/<ИМЯ_ВАШЕГО_АККАУНТА>/settings/personal-access-tokens с правами **Repo Read, Write, Delete**
 > Созданные креды запрашиваются в ходе работы скрипта, записываются в ./ansible/secret.vars и шифруются ansible-vault с паролем, который так же запрашивается.
